@@ -1,0 +1,3 @@
+sort -nr -k 2 | head -$1 > output.txt
+排序根据词频v来排序：sort -nr -k 2
+取topN :head -N
