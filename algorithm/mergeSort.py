@@ -20,11 +20,9 @@ def mergeSort(alist):
         while i < len(lefthalf):
             alist[k] = lefthalf[i]
             i += 1
-            k += 1
         while j < len(righthalf):
             alist[k] = righthalf[j]
             j += 1
-            k += 1
 
 alist = [54,26,93,17,77,31,44,55,20]
 mergeSort(alist)
