@@ -9,7 +9,6 @@ def mergeSort(alist):
     right = mergeSort(alist[num:])
     return merge(left, right)
  
- 
 def merge(left, right):
     l, r = 0, 0
     result = []
