@@ -4,9 +4,9 @@
 def mergeSort(alist):
     if len(alist) <= 1:
         return alist
-    num = len(alist)//2
-    left = mergeSort(alist[:num])
-    right = mergeSort(alist[num:])
+    mid = len(alist)//2
+    left = mergeSort(alist[:mid])
+    right = mergeSort(alist[mid:])
     return merge(left, right)
  
 def merge(left, right):
