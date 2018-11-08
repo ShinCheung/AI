@@ -13,7 +13,7 @@ def FindContinuousSequence(tsum):
         output=[]
         while small < middle:
             if curSum == tsum:
-                output.append(range(small,big+1))
+                output.append(list(range(small,big+1)))
                 big += 1
                 curSum += big
             elif curSum >= tsum:
