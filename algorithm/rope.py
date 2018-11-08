@@ -3,15 +3,14 @@
 
 # 数轴上从左到右有n个点a[0],a[1]...a[n-1],给定一根长度为L的绳子，求绳子最多能覆盖其中的几个点。
 
-def calculate(a,n,L):
-    i = 0
-    best = 0
-    while i + best < n and a[i + best] - a[i] <= L:
+def calculate(alist,n,L):
+    i,best = 0,0
+    while i + best < n and alist[i+best] - alist[i] <= L:
         best += 1
     i+=1
     return best
 
-a = [1,5,8,12,36,50,58]
+alist = [1,5,8,12,36,50,58]
 n = 7
 L = 51
-print(calculate(a,n,L))
+print(calculate(alist,n,L))
