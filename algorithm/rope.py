@@ -7,7 +7,7 @@ def calculate(alist,n,L):
     i,best = 0,0
     while i + best < n and alist[i+best] - alist[i] <= L:
         best += 1
-    i+=1
+    i += 1
     return best
 
 alist = [1,5,8,12,36,50,58]
