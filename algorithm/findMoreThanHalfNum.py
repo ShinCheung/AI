@@ -14,3 +14,16 @@ for k,v in tmp.items():
     # print(k,v)
     if v > l:
         print(k)
+
+# 封装成函数
+def findMoreThanHalfNum(alist):
+    if not alist:
+        return []
+    tmp = Counter(alist)
+    l = len(alist)//2
+    for k, v in tmp.items():
+        if v > l:
+            return k
+
+test = [1,2,3,2,2,2,5,4,2]
+print(findMoreThanHalfNum(test))
