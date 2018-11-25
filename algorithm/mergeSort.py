@@ -13,17 +13,14 @@ def mergeSort(alist):
     return list(merge(left, right))
  
 # def merge(left, right):
-#     l, r = 0, 0
-#     result = []
-#     while l < len(left) and r < len(right):
-#         if left[l] < right[r]:
-#             result.append(left[l])
-#             l += 1
+#     result=[]
+#     while len(left) > 0 and len(right) > 0:
+#         if left[0] < right[0]:
+#             result.append(left.pop(0))
 #         else:
-#             result.append(right[r])
-#             r += 1
-#     result.extend(left[l:])
-#     result.extend(right[r:])
+#             result.append(right.pop(0))
+#     result += left
+#     result += right
 #     return result
 
 alist = [54,26,93,17,77,31,44,55,20]
