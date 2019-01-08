@@ -9,7 +9,7 @@ import itertools
 
 def PrintMinNumber(numbers):
     if not numbers:
-        return ''
+        return
     nums = []
     list_num = list(itertools.permutations(numbers,len(numbers)))
     for item in list_num:
