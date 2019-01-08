@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 def findKMin(alist, k):
-        if alist is None:
+        if not alist:
             return
         n = len(alist)
         if n < k:
